@@ -8,3 +8,67 @@ FROM
 playlist
 ORDER BY
 playlist_id
+
+
+Question
+You are working with a database table that contains data about music albums. The table includes columns for album_id, title, and artist_id. You want to check for album titles that are less than 4 characters long. 
+You write the SQL query below. Add a LENGTH function that will return any album titles that are less than 4 characters long.
+
+SELECT 
+*
+FROM
+album
+WHERE
+length (title) <4
+
+
+Question
+You are working with a database table that contains customer data. The table includes columns about customer location such as city, state, and country. You want to retrieve the first 3 letters of each country name. You decide to use the SUBSTR function to retrieve the first 3 letters of each country name, and use the AS command to store the result in a new column called new_country. 
+You write the SQL query below. Add a statement to your SQL query that will retrieve the first 3 letters of each country name and store the result in a new column as new_country. 
+
+SELECT 
+customer_id,
+SUBSTR(country,1,3) as new_country
+FROM
+customer
+ORDER BY
+country
+
+
+Question
+You are working with a database table named invoice that contains invoice data. The table includes a column for customer_id. You want to remove duplicate entries for customer_id and get a count of total customers in the database. 
+You write the SQL query below. Add a DISTINCT clause that will remove duplicate entries from the customer_id column. 
+
+SELECT
+DISTINCT 
+customer_id
+FROM
+invoice
+
+
+Question
+You are working with a database table named customer that contains customer data. The table includes columns about customer location such as city, state, country, and postal_code. You want to check what country names are greater than 7 characters.
+You write the SQL query below. Add a LENGTH function that will return any country names that are greater than 7 characters long
+
+SELECT
+*
+FROM
+customer
+WHERE
+LENGTH (country) >7
+
+
+Question
+You are working with a database table that contains employee data. The table includes columns about employee location such as city, state, country, and postal_code. You use the SUBSTR function to retrieve the first 3 characters of each last_name, and use the AS command to store the result in a new column called new_last_name.
+You write the SQL query below. Add a statement to your SQL query that will retrieve the first 3 characters of each last_name and store the result in a new column as new_last_name. 
+
+SELECT
+employee_id,
+SUBSTR (1,3) AS 'new_last_name'
+FROM
+employee
+ORDER BY
+postal_code
+
+
+Question
