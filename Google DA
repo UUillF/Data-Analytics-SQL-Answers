@@ -1,6 +1,6 @@
-Question
-You are working with a database table that contains data about playlists for different types of digital media. The table includes columns for playlist_id and name. You want to remove duplicate entries for playlist names and sort the results by playlist ID. 
-You write the SQL query below. Add a DISTINCT clause that will remove duplicate entries from the name column. 
+##Question
+##You are working with a database table that contains data about playlists for different types of digital media. The table includes columns for playlist_id and name. You want to remove duplicate entries for playlist names and sort the results by playlist ID. 
+You write the SQL query below. Add a DISTINCT clause that will remove duplicate entries from the name column. ##
 
 SELECT 
 DISTINCT name
@@ -10,9 +10,9 @@ ORDER BY
 playlist_id
 
 
-Question
-You are working with a database table that contains data about music albums. The table includes columns for album_id, title, and artist_id. You want to check for album titles that are less than 4 characters long. 
-You write the SQL query below. Add a LENGTH function that will return any album titles that are less than 4 characters long.
+##Question
+##You are working with a database table that contains data about music albums. The table includes columns for album_id, title, and artist_id. You want to check for album titles that are less than 4 characters long. 
+You write the SQL query below. Add a LENGTH function that will return any album titles that are less than 4 characters long.##
 
 SELECT 
 *
@@ -22,9 +22,9 @@ WHERE
 length (title) <4
 
 
-Question
-You are working with a database table that contains customer data. The table includes columns about customer location such as city, state, and country. You want to retrieve the first 3 letters of each country name. You decide to use the SUBSTR function to retrieve the first 3 letters of each country name, and use the AS command to store the result in a new column called new_country. 
-You write the SQL query below. Add a statement to your SQL query that will retrieve the first 3 letters of each country name and store the result in a new column as new_country. 
+##Question
+##You are working with a database table that contains customer data. The table includes columns about customer location such as city, state, and country. You want to retrieve the first 3 letters of each country name. You decide to use the SUBSTR function to retrieve the first 3 letters of each country name, and use the AS command to store the result in a new column called new_country. 
+You write the SQL query below. Add a statement to your SQL query that will retrieve the first 3 letters of each country name and store the result in a new column as new_country. ##
 
 SELECT 
 customer_id,
@@ -35,9 +35,9 @@ ORDER BY
 country
 
 
-Question
-You are working with a database table named invoice that contains invoice data. The table includes a column for customer_id. You want to remove duplicate entries for customer_id and get a count of total customers in the database. 
-You write the SQL query below. Add a DISTINCT clause that will remove duplicate entries from the customer_id column. 
+##Question
+##You are working with a database table named invoice that contains invoice data. The table includes a column for customer_id. You want to remove duplicate entries for customer_id and get a count of total customers in the database. 
+You write the SQL query below. Add a DISTINCT clause that will remove duplicate entries from the customer_id column. ##
 
 SELECT
 DISTINCT 
@@ -46,9 +46,9 @@ FROM
 invoice
 
 
-Question
-You are working with a database table named customer that contains customer data. The table includes columns about customer location such as city, state, country, and postal_code. You want to check what country names are greater than 7 characters.
-You write the SQL query below. Add a LENGTH function that will return any country names that are greater than 7 characters long
+##Question
+##You are working with a database table named customer that contains customer data. The table includes columns about customer location such as city, state, country, and postal_code. You want to check what country names are greater than 7 characters.
+You write the SQL query below. Add a LENGTH function that will return any country names that are greater than 7 characters long##
 
 SELECT
 *
@@ -58,9 +58,9 @@ WHERE
 LENGTH (country) >7
 
 
-Question
-You are working with a database table that contains employee data. The table includes columns about employee location such as city, state, country, and postal_code. You use the SUBSTR function to retrieve the first 3 characters of each last_name, and use the AS command to store the result in a new column called new_last_name.
-You write the SQL query below. Add a statement to your SQL query that will retrieve the first 3 characters of each last_name and store the result in a new column as new_last_name. 
+##Question
+##You are working with a database table that contains employee data. The table includes columns about employee location such as city, state, country, and postal_code. You use the SUBSTR function to retrieve the first 3 characters of each last_name, and use the AS command to store the result in a new column called new_last_name.
+You write the SQL query below. Add a statement to your SQL query that will retrieve the first 3 characters of each last_name and store the result in a new column as new_last_name. ##
 
 SELECT
 employee_id,
@@ -71,9 +71,9 @@ ORDER BY
 postal_code
 
 
-Question
-You are working on an international project and need to invoice your customers for the work you complete. The database you use contains an invoices table. The invoices table contains the following columns: InvoiceId, CustomerId, InvoiceDate, BillingAddress, BillingCity, BillingState, BillingCountry, BillingPostalCode, Total.
-Create a query to return all the columns from this table for only customers in Germany who have an invoice total greater than $5. 
+##Question
+##You are working on an international project and need to invoice your customers for the work you complete. The database you use contains an invoices table. The invoices table contains the following columns: InvoiceId, CustomerId, InvoiceDate, BillingAddress, BillingCity, BillingState, BillingCountry, BillingPostalCode, Total.
+Create a query to return all the columns from this table for only customers in Germany who have an invoice total greater than $5. ##
 
 SELECT 
 *
@@ -85,8 +85,8 @@ and
 total >5
 
 
-Question
-You are working with a database table that contains customer data. The country column designates the country where each customer is located. You want to find out which customers are located in Brazil. 
+##Question
+##You are working with a database table that contains customer data. The country column designates the country where each customer is located. You want to find out which customers are located in Brazil. ##
 
 SELECT 
 *
@@ -96,8 +96,8 @@ WHERE
 country = 'Brazil'
 
 
-Question
-You are working with a database table that contains invoice data. The table includes columns for invoice_line_id (line items for each invoice), invoice_id, unit_price, and quantity (the number of purchases in each line item). Each invoice contains multiple line items. You want to know the total price for each of the first 5 line items in the table.
+##Question
+##You are working with a database table that contains invoice data. The table includes columns for invoice_line_id (line items for each invoice), invoice_id, unit_price, and quantity (the number of purchases in each line item). Each invoice contains multiple line items. You want to know the total price for each of the first 5 line items in the table.
 
 SELECT 
 invoice_line_id,
